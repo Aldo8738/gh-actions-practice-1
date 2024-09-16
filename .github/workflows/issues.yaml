@@ -1,0 +1,6 @@
+name: Issues
+on: issues
+jobs:
+  output-issue:
+    - name: Print issue metadata
+    run: echo "${{ toJSON(github) }}"
