@@ -2,6 +2,7 @@ name: Issues
 on: issues
 jobs:
   output-issue:
+    runs-on: ubuntu-latest
     steps:
       - name: Print issue metadata
       run: echo "${{ toJSON(github) }}"
