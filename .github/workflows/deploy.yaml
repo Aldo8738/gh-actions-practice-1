@@ -1,4 +1,4 @@
-name: Deploy Workflow
+name: Deploy Workflow Exercise
 on: push
 jobs:
   lint:
@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: Get code
         uses: actions/checkout@v3  
-      - name: Install NodeJs
+      - name: Install NodeJs #can ignore prob
         uses: actions/setup-node@v3
         with:
           node-version: 18
